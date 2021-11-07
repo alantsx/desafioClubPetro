@@ -8,4 +8,14 @@ router.get('/users', async (req, res) => {
   res.json(data);
 });
 
+router.get('/writeusers', async (req, res) => {
+  const { data } = await axios.get('https://randomuser.me/api/?results=4');
+  console.log(data);
+  fs.writeFile('data/users.json', JSON.stringify(data), (err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+});
+
 module.exports = router;

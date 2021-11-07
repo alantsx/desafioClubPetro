@@ -1,4 +1,4 @@
-#### salvar resultados em JSON
+#### salvar resultados em JSON. Importar 100 usuários por dia
 #### Todos os produtos deverão ter os campos personalizados imported_t e status.
 #### Importar os dados de maneira paginada para não sobrecargar a API do Random Users. Por exemplo, de 100 em usuários.
 #### Limitar a importação a somente 2000 usuarios;
